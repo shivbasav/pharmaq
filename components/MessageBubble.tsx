@@ -2,9 +2,9 @@
 
 import ReactMarkdown from "react-markdown";
 import { Brain, User } from "lucide-react";
-import type { Message } from "@/types";
+import type { ChatMessage } from "@/types";
 
-export default function MessageBubble({ message }: { message: Message }) {
+export default function MessageBubble({ message }: { message: ChatMessage }) {
   const isUser = message.role === "user";
 
   return (

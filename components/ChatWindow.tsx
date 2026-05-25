@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Send, Loader2, Brain, Search, Database } from "lucide-react";
 import MessageBubble from "./MessageBubble";
-import type { Message } from "@/types";
+import type { ChatMessage } from "@/types";
 
 const POPULAR_DRUGS = [
   "alectinib",
@@ -14,7 +14,7 @@ const POPULAR_DRUGS = [
   "bevacizumab",
 ];
 
-const WELCOME: Message = {
+const WELCOME: ChatMessage = {
   role: "assistant",
   content: `Hello — I'm **PharmaIQ**, your real-time pharma analytics assistant.
 
@@ -24,7 +24,7 @@ Try: \`alectinib\`, \`pembrolizumab\`, or \`osimertinib\``,
 };
 
 export default function ChatWindow() {
-  const [messages, setMessages] = useState<Message[]>([WELCOME]);
+  const [messages, setMessages] = useState<ChatMessage[]>([WELCOME]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [drugQuery, setDrugQuery] = useState("");
@@ -126,7 +126,7 @@ export default function ChatWindow() {
     const content = (text ?? input).trim();
     if (!content || loading) return;
 
-    const userMsg: Message = { role: "user", content };
+    const userMsg: ChatMessage = { role: "user", content };
     const history = messages.filter(
       (m) => m.role !== "assistant" || messages.indexOf(m) !== 0
     );
