@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { SYSTEM_PROMPT } from "@/lib/systemPrompt";
-import type { Message } from "@/types";
+
+interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
@@ -10,7 +14,7 @@ export async function POST(req: NextRequest) {
     const {
       messages,
       systemPrompt,
-    }: { messages: Message[]; systemPrompt?: string } = await req.json();
+    }: { messages: ChatMessage[]; systemPrompt?: string } = await req.json();
 
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json({ error: "Invalid messages" }, { status: 400 });
