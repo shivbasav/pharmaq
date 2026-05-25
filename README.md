@@ -1,6 +1,6 @@
 # PharmaIQ — HQ Brand Analytics Assistant
 
-> A conversational AI assistant for pharma commercial teams to monitor brand performance, launch uptake, market share, and competitor dynamics — powered by real FDA + CMS data and Google Gemini AI.
+> A conversational AI assistant for pharma commercial teams to monitor brand performance, launch uptake, market share, and competitor dynamics powered by real FDA + CMS data and Google Gemini AI.
 
 ---
 
@@ -30,7 +30,7 @@ PharmaIQ is a full-stack web application that combines a **real-time pharma data
 
 ### The Problem It Solves
 
-Traditional pharma dashboards are static. You see numbers but cannot ask follow-up questions. Analysts spend hours pulling reports from IQVIA, FDA, and CMS systems and assembling them into PowerPoints. PharmaIQ collapses that workflow into a single conversational interface — search any drug, get live data, ask questions in plain English.
+Traditional pharma dashboards are static. You see numbers but cannot ask follow-up questions. Analysts spend hours pulling reports from IQVIA, FDA, and CMS systems and assembling them into PowerPoints. PharmaIQ collapses that workflow into a single conversational interface search any drug, get live data, ask questions in plain English.
 
 ### How It Works
 
