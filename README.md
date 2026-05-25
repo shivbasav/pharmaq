@@ -26,7 +26,7 @@
 
 ## 1. Project Overview
 
-PharmaIQ is a full-stack web application that combines a **real-time pharma data layer** with a **conversational AI assistant**. It is designed for pharma HQ commercial teams — brand directors, marketing analytics leads, and VPs — who need instant access to drug performance insights without writing SQL or navigating complex BI tools.
+PharmaIQ is a full-stack web application that combines a **real-time pharma data layer** with a **conversational AI assistant**. It is designed for pharma HQ commercial teams brand directors, marketing analytics leads, and VPs — who need instant access to drug performance insights without writing SQL or navigating complex BI tools.
 
 ### The Problem It Solves
 
